@@ -123,12 +123,12 @@ export default function GeneratorPage({ onGenerate, onBack, initialData }) {
           </label>
           <textarea
             className="form-textarea"
-            placeholder="예: 주민등록등본과 소득확인서류 추가 제출 필요"
+            placeholder="예: 주민등록등본과 소득확인서류"
             value={form.content}
             onChange={(e) => set('content')(e.target.value)}
             rows={3}
           />
-          <p className="form-hint">응답 문장에 반드시 포함해야 할 핵심 정보를 입력하세요.</p>
+          <p className="form-hint">문장에 들어갈 핵심 단어·내용만 입력하세요. (예: 서류명, 불가 사유, 지연 이유 등)</p>
         </div>
 
         {/* 선택 입력 */}
